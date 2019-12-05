@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/*....... genrall input..............*/
+body {
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: bottom;
+  background-image: url('../resources/images/mathbackgorund.jpg');
+  font-family: 'Muli', sans-serif;
+  height: 2000px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url('../resources/images/backgroundimagespace.jpg') ;
+  height: 570px;
+  color: white;
+  font-size: 15px;
+  padding: 0em;
+  margin: 0em;
+  position: relative;
+
+
+}
+
+.logo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  padding: 1em;
+  display: inline-block;
+  float: left;
+}
+
+.nav {
+  height: 20px;
+  margin-top: 2px;
+
+}
+
+.navheader {
+  list-style-type: none;
+  padding:0;
+  display: inline-block;
+
+}
+
+.headernavigation {
+  text-align: center;
+
+}
+
+
+
+nav li {
+
+  text-decoration: none;
+  padding: 5px 0;
+
+
+}
+
+header nav a {
+
+  font-size: 14px;
+  background-color: #6E00D5;
+  color: white;
+  border: 3px solid #DC2BFF;
+  border-radius: 5%;
+  text-align: center;
+  border-width: thin;
+  border-style: groove;
+  max-width: 182px;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+
+}
+
+#demolink {
+  background-color: #FFDF00;
+  color: #040053;
+
+}
+
+
+.numetrylogo {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  position: absolute;
+  transform: translate(-50%,0);
+  left: 50%;
+  bottom: 20px;
+
+}
+
+.active {
+  color: #F37720;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  padding: 1em;
+  padding-bottom: 2em;
+}
+
+h1 > b {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #6E00D5;
+}
+
+section a {
+  font-size: 14px;
+  background-color: #6E00D5;
+  color: white;
+  border: 3px solid #DC2BFF;
+  border-radius: 5%;
+  text-align: center;
+  border-width: thin;
+  border-style: groove;
+  max-width: 182px;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  text-decoration: none;
+}
+main {
+  padding: 1em;
+}
+
+footer nav a{
+  text-align: center;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+.navfooter {
+  list-style-type: none;
+  padding:0;
+  display: inline-block;
+  background-color:
+
+}
+
+.socialmediaicons {
+  display: inline-block;
+  text-decoration: none;
+}
+.socialmediaicons img {
+  height: 50px;
+  width: 50px;
+}
+
+.credits {
+  padding: 1em;
+  padding-bottom: 3em;
+}
+
+/*.........Homepage.........*/
+
+
+.kidsnowadays {
+  background-color: #C5D4DD;
+  margin-top: 4em;
+  display: inline-block;
+
+
+}
+.kidsnowadays > section {
+  padding: 1em;
+}
+
+.boyplaying {
+  margin-top: -5em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.moreinfo {
+  text-align: center;
+}
+
+.haavard {
+  padding: 1em;
+  background-color: #C5D4DD;
+  margin-top: 2em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.kjendis {
+  width: 100%;
+}
+
+.investors {
+  background-color: #C5D4DD;
+  margin-top: 4em;
+  display: inline-block;
+}
+
+.investorsheader {
+  width: 100%;
+  margin-top: -4em;
+}
+
+
+.investorgrid {
+  padding: 1em;
+  clear:both;
+}
+
+.investorlogosrow {
+  display: flex;
+}
+
+.investorlogo {
+  width: 30.5%;
+  margin: 1%;
+  margin-bottom: 10px;
+}
+
+.investorlogo img {
+  width: 100%;
+
+}
+.vimeo {
+  background-color: #C5D4DD;
+  padding: 1em;
+  margin-top: 2em;
+  display: inline-block;
+}
+
+.vimeologo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+}
+
+iframe {
+  border: none;
+  height: unset;
+}
+
+.numetryvideo {
+  height: 400px;
+  width: 100%;
+}
+
+/*........About Numetry.........*/
+
+
+.excitingandcool {
+
+  margin-top: 0.5em;
+  vertical-align: top;
+  background-color: #C5D4DD;
+  margin-bottom: 2em;
+
+}
+
+.thesquad {
+  width: 100%;
+  min-height: 200px;
+  margin-right: 1%;
+}
+
+.excitingandcool section {
+  padding: 1em;
+}
+
+.concentrated {
+  width: 100%;
+
+}
+
+.gamedevelopment {
+  background-color: #C5D4DD;
+  margin-top: 2em;
+  min-height: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.gamedevelopment > section {
+  padding: 1em;
+}
+
+.matema {
+  margin-top: 2em;
+  height: 20%;
+  vertical-align: top;
+  background-color: #C5D4DD;
+}
+
+.matemaimage {
+  width: 100%;
+}
+
+.matema > section {
+  padding: 1em;
+}
+
+.gamemissions {
+  margin-top: 2em;
+  height: 20%;
+  vertical-align: top;
+  background-color: #C5D4DD;
+
+}
+
+.mission {
+  width: 100%;
+  min-height: 200px;
+  margin-right: 1%;
+}
+
+.gamemissions > section {
+  padding: 1em;
+}
+
+.gamelogo {
+  width: 100%;
+}
+
+.thegame {
+  background-color: #040053;
+  border: solid 10px #C5D4DD;
+  color: white;
+}
+
+.thegame, span {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+a.playbutton {
+  width: 70%;
+  background: none;
+  padding: 0;
+  border: none;
+  margin-bottom: 2em;
+}
+
+/*........Our Team & Experts......*/
+
+
+
+/*........Contact Us..............*/
+
+
+/*.......Scaling-mob.........*/
+@media only screen (min-width: 0px) and (max-width: 600px) {
+
+  .numetrylogo {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    position: absolute;
+    transform: translate(-50%,0);
+    left: 50%;
+    bottom: 20px;
+
+  }
+
+}
+
+
+/*........Scaling-tab........*/
+
+@media only screen  (min-width: 600px) and (max-width: 900px) {
+
+
+  iframe {
+    min-height: 400px;
+  }
+
+}
+
+
+/*........scaling-desktop....*/
+
+@media only screen  (min-width: 900px) {
+
+  h1 {
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 50%;
+  }
+
+
+}
