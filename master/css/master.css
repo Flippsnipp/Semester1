@@ -70,7 +70,9 @@ header {
 
 }
 
-
+.headertext {
+  margin-top: -1em;
+}
 
 nav li {
 
@@ -541,6 +543,14 @@ input[type=submit]:hover {
     max-height: 330px;
   }
 
+  .headertext {
+    font-size: 25px;
+    margin-top: 0.5em;
+  }
+
+  .headertext > b {
+    font-size: 35px;
+  }
   .logo {
     float: left;
     width: 300px;
@@ -550,9 +560,14 @@ input[type=submit]:hover {
     margin-left: 2em;
   }
 
+  .clearfix {
+    padding-left: 10%;
+  }
+
   .numetrylogo {
-    transform: translate(-67%,0);
+    transform: translate(-50%,0);
     margin-bottom: 2em;
+    width: 200px;
   }
 
 /*.........Homepage.........*/
@@ -621,12 +636,68 @@ input[type=submit]:hover {
 @media only screen and (min-width: 900px) {
 
 /*....... genrall input..............*/
+  header {
+    max-height: 360px;
+  }
+
+  .logo {
+    float: left;
+    width: 350px;
+
+  }
+  .headernavigation {
+    margin-left: 2em;
+  }
+  .headertext {
+    font-size: 30px;
+    margin-top: 0.5em;
+  }
+
+  .headertext > b {
+    font-size: 40px;
+  }
+  .navheader {
+    padding-left: 31%;
+  }
+
+  .numetrylogo {
+    transform: translate(-50%,0);
+    margin-bottom: 4em;
+    width: 300px;
+  }
 
 
+  .h1 > b {
+    font-size: 35px;
+  }
 
 /*............Homepage...............*/
+  .kidsnowadays {
+    margin-top: 5em;
+    vertical-align: top;
+    min-height: 1264px;
+  }
 
+  .haavard {
+    vertical-align: top;
+    min-height: 1329px;
+    margin-top: 0em;
+  }
 
+  .investors {
+    margin-top: 4.3em;
+  }
+
+  .vimeo {
+    vertical-align: top;
+    margin-top: 2em;
+
+  }
+ main > * {
+   display: inline-block;
+   margin: 5px;
+   max-width: 31%;
+ }
 
 /*..........About Numetry............*/
 
