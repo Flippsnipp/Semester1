@@ -648,6 +648,7 @@ input[type=submit]:hover {
   .headernavigation {
     margin-left: 2em;
   }
+
   .headertext {
     font-size: 30px;
     margin-top: 0.5em;
@@ -656,6 +657,7 @@ input[type=submit]:hover {
   .headertext > b {
     font-size: 40px;
   }
+
   .navheader {
     padding-left: 31%;
   }
@@ -669,6 +671,12 @@ input[type=submit]:hover {
 
   .h1 > b {
     font-size: 35px;
+  }
+
+  main > *:not(.excitingandcool) main >:not(.gamedevelopment) {
+    display: inline-block;
+    margin: 5px;
+    max-width: 31%;
   }
 
 /*............Homepage...............*/
@@ -693,15 +701,34 @@ input[type=submit]:hover {
     margin-top: 2em;
 
   }
- main > * {
-   display: inline-block;
-   margin: 5px;
-   max-width: 31%;
- }
 
 /*..........About Numetry............*/
 
+  .thesquad {
+    display: block;
+    min-height: 400px;
+    min-width: 880px;
+  }
 
+  .excitingandcool section {
+    min-width: 880px;
+    background-color: #C5D4DD;
+  }
+  .aboutnumetry .kidsnowadays {
+    max-width: 47%;
+    display: inline-block;
+    margin: 5px;
+    margin-top: 5em;
+    vertical-align: top;
+    min-height: 390px;
+  }
+
+  .gamedevelopment {
+    margin-top: 3.6em;
+    vertical-align: top;
+    min-height: 428px;
+    margin-left: 5px;
+  }
 
 /*.........Our Team & Experts........*/
 
