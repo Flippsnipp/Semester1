@@ -10,7 +10,6 @@
   </head>
   <body>
     <header>
-
       <nav class="headernavigation" />
         <img class="logo" src="./resources/eduplaytion_media/logos/logo-eduplay-1.svg" alt="eduplaytionlogo" />
         <ul class="navheader clearfix">
@@ -47,184 +46,236 @@
           </b>
         </h1>
       <img class="numetrylogo" src="./resources/eduplaytion_media/logos/numetrylogo.png" alt="numetrylogo" />
-
-    </header>
+    </header> <!--closes "header"-->
 
     <div class="contactform">
       <div class="container">
         <form action="action_page.php">
+          <div class="language">
+            <label for="language">
+              <h3>
+                Language selection
+              </h3>
+            </label>
+            <select id="language" name="language">
+              <option value="norwegian">
+                Norwegian
+              </option>
+              <option value="english">
+                English
+              </option>
+              <option value="spanish">
+                Spanish
+              </option>
+              <option value="german">
+                German
+              </option>
+            </select>
+          </div><!--closes "language"-->
+          <div class="useroptions">
+            <h3>
+              User Options
+            </h3>
+            <p>
+              If you are a curious teacher or guardian and would like to try Numetry, please contact us by phone, e-mail or via the contact form below.
+              We will then send you a test link within 24 hours.
+            </p>
+            <input type="radio" name="user" value="Guardian" /> Guardian
+            <input type="radio" name="user" value="Teacher" /> Teacher
+            <input type="radio" name="user" value="student" /> Student
+            <input type="radio" name="user" value="investor" /> Investor
+          </div><!--closes "useroptions"-->
           <div class="nameandemail">
+            <h3>
+              Contact information
+            </h3>
             <div class="name">
               <label for="fname">
                 Full Name
               </label>
               <input type="text" id="fname" name="fullname" placeholder="Your full name..">
-            </div>
+            </div><!--closes "name"-->
             <div class="email">
               <label for="email">
                 Email address
               </label>
               <input type="text" id="email" name="email" placeholder="email..">
-            </div>
-          </div>
-
-          <div class="toursandlanguage">
-            <div class="tours">
-              <label for="tours">
-                Tour Options
-              </label>
-              <select id="tours" name="tours">
-                <option value="easy">
-                  Easy
-                </option>
-                <option value="medium">
-                  Medium
-                </option>
-                <option value="advanced">
-                  Advanced
-                </option>
-              </select>
-            </div>
-            <div class="language">
-              <label for="language">
-                Language
-              </label>
-              <select id="language" name="language">
-                <option value="spanish">
-                  Spanish
-                </option>
-                <option value="english">
-                  English
-                </option>
-                <option value="german">
-                  German
-                </option>
-              </select>
-            </div>
-
-
-          </div>
-          <div class="adultsandbikes">
-            <div class="adults">
-              <label for="adults">
-                Adults
-              </label>
-              <select id="adults" name="adults">
+            </div><!--closes "email"-->
+          </div><!--closes "nameandemail"-->
+          <div class="subscriptions">
+            <label for="subscriptions">
+              <h3>Subscriptions</h3>
+            </label>
+            <p>
+              Numetry is free for everyone. However, access to all the features
+              requires a Premium Account.
+            </p>
+            <select id="subscription" name="subscription">
               <option value="none">
                 none
               </option>
-              <option value="1">
-                1
+              <option value="Free">
+                Free
               </option>
-              <option value="2">
-                2
+              <option value="Premium">
+                Premium
               </option>
-              <option value="3">
-                3
-              </option>
-              <option value="4">
-                4
-              </option>
-              <option value="5">
-                5
-              </option>
-              <option value="6">
-                6
-              </option>
-              <option value="7">
-                7
-              </option>
-              </select>
-            </div>
-            <div class="bikeoptions">
-              <label for="bikes">
-                Bikes
-              </label>
-              <select id="bikes" name="bikes">
-              <option value="none">
-                none
-              </option>
-              <option value="battery">
-                Semi Battery driven bycycle
-              </option>
-              <option value="citybike">
-                Citybike
-              </option>
-              <option value="bike">
-                Bike
-              </option>
-              </select>
-            </div>
-          </div>
-          <div class="childrenandbikes">
-            <div class="children">
-              <label for="children">
-                Children
-              </label>
-              <select id="children" name="children">
-              <option value="none">
-                none
-              </option>
-              <option value="1">
-                1
-              </option>
-              <option value="2">
-                2
-              </option>
-              <option value="3">
-                3
-              </option>
-              <option value="4">
-                4
-              </option>
-              <option value="5">
-                5
-              </option>
-              <option value="6">
-                6
-              </option>
-              <option value="7">
-                7
-              </option>
-              </select>
-            </div>
-            <div class="bikeoptions">
-              <label for="bikes">
-                Bikes
-              </label>
-              <select id="bikes" name="bikes">
-              <option value="none">
-                none
-              </option>
-              <option value="battery">
-                Semi Battery driven bycycle
-              </option>
-              <option value="citybike">
-                Citybike
-              </option>
-              <option value="bike">
-                Bike
-              </option>
-              </select>
-            </div>
-          </div>
+            </select>
+          </div><!--closes "subscriptions"-->
           <div class="textarea">
             <label for="subject">
-              Subject
+              <h3>
+                Subject
+              </h3>
             </label>
+            <p>
+              If you have any questions or just want to get in touch with us, we will be happy to help you with that too.
+            </p>
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px">
             </textarea>
-          </div>
+          </div><!--closes "textarea"-->
+          <input type="submit" value="Submit" />
+        </form><!--closes "action_page.php"-->
+      </div><!--closes "container"-->
+    </div><!--closes "contactform1"-->
+    <div class="contactform">
+      <div class="contactus">
+        <h3>
+          Our Contact information
+        </h3>
+        <p>
+          <b>
+            Phone Number:
+          </b>
+          +47 951 15 756
+        </p>
+        <p>
+          <b>
+            E-Mail:
+          </b>
+          hello@eduplaytion.no
+        </p>
+        <p>
+          <b>
+            Address:
+          </b>
+          Media City Bergen
+        </p>
+        <p>
+          Lars Hilles gate 30, 5008 Bergen, Norway.
+        </p>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d15778.677089597253!2d5.324566219488744!3d60.37363175031913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x463cf9404f702e69%3A0xd262d38e0c591418!2sKanalveien%2088%2C%20Bergen!3m2!1d60.360659399999996!2d5.3479816!4m5!1s0x463cfeacf589fac5%3A0xa8a79e1beb81a3ea!2sMedia%20City%20Bergen%2C%20Lars%20Hilles%20gate%2C%20Bergen!3m2!1d60.3853605!2d5.3328796999999994!5e0!3m2!1sen!2sno!4v1575894882995!5m2!1sen!2sno"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div><!--closes "contactus"-->
+    </div><!--closes "contactform"-->
+    <div class="contactform">
+      <h2>
+        You can now become a co-owner of Eduplaytion
+      </h2>
+      <h3>
+        Meta
+      </h3>
+      <p>
+        Date: 13/11/2019
+      </p>
+      <p>
+        Author: Kristoffer
+      </p>
+      <h3>
+        Summary & Intro
+      </h3>
+      <p>
+        Mathematics game "Numetry" now goes into the final refinement before commercial launch in May 2020. To position ourselves for growth, we now invite to issue in Eduplaytion AS Eduplaytion AS
+        decided in an extraordinary general meeting on November 13, 2019 to issue shares in the interval 2.8
+      </p>
+      <img class="co-owner" src="./resources/images/co-owner.jpg" alt="Co-Owner">
+      <h3>
+        Content
+      </h3>
+      <p>
+        Eduplaytion AS decided in an extraordinary general meeting on November 13, 2019 to issue shares in the range of MNOK 2.8 - MNOK 4.79.
+      </p>
+      <p>
+        On the occasion of the rights issue, we have applied for, and been granted, both Innovation Contract in collaboration with Innovation Norway and SkatteFUNN via the Norwegian Research Council.
+        In combination, these schemes will provide the company with an estimated MNOK 4 in addition to the private capital that will be added to the company in private placement. The company's
+        shareholders have so far signaled strong interest in the share issue and have pre-emptive rights if it is subscribed.
+      </p>
+      <p>
+        The company is priced at MNOK 15 before cash. Up to 109,000 new shares with a nominal value of NOK 0.1 will be issued and a premium of NOK 43.92. NOK 44.02 per share will be paid. About
+        NOK 400,000 of the company's debt is related to conversion rights that the creditors have chosen to use, at the same rate.
+      </p>
+      <p>
+        Investments over NOK 30,000 will qualify for a tax deduction under the KapitalFUNN scheme. Investors who wish to use the scheme are asked to disclose this to the company separately. Read more here:
+        <a href="https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/tax-deductions-in-connection-with-investments-in-start-up-businesses---the-tax-incentive-scheme/">
+          Link to The Norwegian Tax Administration
+        </a>
+      </p>
+      <p>
+        The subscription period is from November 13, 2019 to January 12, 2020. All new investors must join the company's shareholder agreement. The current agreement follows below and will be
+        updated to reflect new share capital and new shareholders. Payment deadline is February 12, 2020. All questions and meeting requests are most welcome to:
+        <a href="kristoffer@eduplaytion.no">kristoffer@eduplaytion.no</a>
+      </p>
+      <p>
+        We have made a short presentation in the video below.
+      </p>
+      <iframe class="investorvideo" src="https://www.youtube.com/embed/B6wqyH0JR5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <h3>
+        investor links
+      </h3>
+      <ol>
+        <li>
+          <a href="https://numetry.com/wp-content/uploads/2019/11/Eduplaytion-AS-%E2%80%93-Pitch-Deck.pdf">
+            Investorpresentation, Download
+          </a>
+        </li>
+        <li>
+          <a href="https://numetry.com/wp-content/uploads/2019/11/Tegningsblankett.docx">
+            Drawing Form, Download
+          </a>
+        </li>
+        <li>
+          <a href="https://numetry.com/wp-content/uploads/2019/11/Protokoll-fra-ekstraordin%C3%A6r-GF-13-nov-2019.pdf">
+            Minutes from Extraordinary GF Nov 13 2019, Download
+          </a>
+        </li>
+        <li>
+          <a href="https://numetry.com/wp-content/uploads/2019/11/Eduplaytion-AS-likviditetsbudsjett.xlsx">
+            Liquidity Budget, Download
+          </a>
+        </li>
+        <li>
+          <a href="https://numetry.com/wp-content/uploads/2019/11/Resultat-16-okt-2019.pdf">
+            Result Oct 16 2019, Download
+          </a>
+        </li>
+        <li>
+          <a href="https://numetry.com/wp-content/uploads/2019/11/Balanse-16-okt-2019.pdf">
+            Balance Oct 16 2019, Download
+          </a>
+        </li>
+        <li>
+          <a href="https://numetry.com/wp-content/uploads/2019/11/Aksjeeierbok-%E2%80%93-Eduplaytion-AS.xlsx">
+            Shareholder Book - Eduplaytion AS, Download
+          </a>
+        </li>
+        <li>
+          <a href="https://numetry.com/wp-content/uploads/2019/11/Termsheet-1.pdf">
+            Term Sheet, Download
+          </a>
+        </li>
+        <li>
+          <a href="https://numetry.com/wp-content/uploads/2019/11/vedtekter-for-Eduplaytion-AS-vedtatt-11.07.2019.pdf">
+            Statutes 11.07.2019, Download
+          </a>
+        </li>
+        <li>
+          <a href="https://numetry.com/wp-content/uploads/2019/11/Firmaattest.pdf">
+            About Company, Download
+          </a>
+        </li>
+      </ol>
 
-
-
-  <input type="submit" value="Submit">
-
-  </form>
-  </div>
-</div>
-
-
+    </div><!--closes "contactform"-->
     <footer>
       <nav class="footernavigation" />
 
@@ -294,7 +345,7 @@
         </div>
 
 
-    </footer>
+      </footer>
 
   </body>
 </html>

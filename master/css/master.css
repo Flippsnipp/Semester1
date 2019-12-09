@@ -36,8 +36,8 @@ header {
   height: 570px;
   color: white;
   font-size: 15px;
-  padding: 0em;
-  margin: 0em;
+  padding: 0;
+  margin: 0;
   position: relative;
 
 
@@ -85,11 +85,9 @@ header nav a {
   font-size: 14px;
   background-color: #6E00D5;
   color: white;
-  border: 3px solid #DC2BFF;
+  border: 3px groove #DC2BFF;
   border-radius: 5%;
   text-align: center;
-  border-width: thin;
-  border-style: groove;
   max-width: 182px;
   display: block;
   padding: 5px;
@@ -144,11 +142,9 @@ section a {
   font-size: 14px;
   background-color: #6E00D5;
   color: white;
-  border: 3px solid #DC2BFF;
+  border: 3px groove #DC2BFF;
   border-radius: 5%;
   text-align: center;
-  border-width: thin;
-  border-style: groove;
   max-width: 182px;
   display: block;
   margin: 0 auto;
@@ -172,7 +168,6 @@ footer {
   list-style-type: none;
   padding:0;
   display: inline-block;
-  background-color:
 
 }
 
@@ -207,7 +202,11 @@ footer {
 .boyplaying {
   margin-top: -5em;
   width: 100%;
-  margin-bottom: 2em;
+
+}
+
+.superkid {
+  width: 100%
 }
 
 .moreinfo {
@@ -219,13 +218,16 @@ footer {
   background-color: #C5D4DD;
   margin-top: 2em;
   display: inline-block;
-  vertical-align: top;
+
 }
 
 .kjendis {
   width: 100%;
 }
 
+.preach {
+  width: 100%;
+}
 .investors {
   background-color: #C5D4DD;
   margin-top: 4em;
@@ -379,55 +381,262 @@ a.playbutton {
 
 /*........Our Team & Experts......*/
 
+.staff {
+  padding: 1em;
+}
 
+.staff img:not(.vision):not(.ipadgirl) {
+  max-width: 128px;
+  margin: 0 auto;
+  display: block;
+}
+
+.staff h2 {
+  text-align: center;
+}
+
+.staff b {
+  display: block;
+  text-align: center;
+}
+
+.ourvision {
+  background-color: #C5D4DD;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.vision {
+  width: 100%;
+}
+
+.leaders {
+  background-color: #09204D;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.leadroles h2 {
+  color: #FFFF01;
+
+}
+
+.keys {
+  background-color: #1E4470;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.keyroles h2 {
+  color: #FFFF01;
+}
+
+.teach {
+  background-color: #213E71;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.educators h2 {
+  color: #FFFF01;
+}
+
+.intern {
+  background-color: #8990C6;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.users {
+  background-color: #BDA1D7;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.join {
+  background-color: #C5D4DD;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.ipadgirl {
+  width: 100%
+}
 
 /*........Contact Us..............*/
 
+.contactform {
+  background-color: #C5D4DD;
+  margin: 2em;
+  padding: 1em;
+}
+
+form {
+  margin-left:  0 auto;
+  margin-right: 0 auto;
+}
+
+.contactform h3 {
+  color: #6E00D5;
+  font-size: 20px;
+}
+
+label {
+  color: #6E00D5;
+  font-size: 18px;
+
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid #6E00D5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #6E00D5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #DC2BFF;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+}
+.investorvideo {
+  width: 100%;
+  height: 300px;
+}
+
+.co-owner {
+  width: 100%
+}
 
 /*.......Scaling-mob.........*/
-@media only screen (min-width: 0px) and (max-width: 600px) {
-
-  .numetrylogo {
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 300px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    position: absolute;
-    transform: translate(-50%,0);
-    left: 50%;
-    bottom: 20px;
-
-  }
+@media only screen and (max-width: 600px) {
 
 }
 
 
 /*........Scaling-tab........*/
+@media only screen and (min-width: 600px) and (max-width: 900px){
 
-@media only screen  (min-width: 600px) and (max-width: 900px) {
+/*....... genrall input..............*/
 
-
-  iframe {
-    min-height: 400px;
+  header {
+    max-height: 330px;
   }
+
+  .logo {
+    float: left;
+    width: 300px;
+
+  }
+  .headernavigation {
+    margin-left: 2em;
+  }
+
+  .numetrylogo {
+    transform: translate(-67%,0);
+    margin-bottom: 2em;
+  }
+
+/*.........Homepage.........*/
+  .kidsnowadays {
+    max-width: 47%;
+    display: inline-block;
+    margin: 5px;
+    margin-top: 5em;
+    vertical-align: top;
+    min-height: 1264px;
+  }
+
+  .haavard {
+    max-width: 47%;
+    margin: 5px;
+    vertical-align: top;
+    min-height: 1329px;
+  }
+
+  .investors {
+    max-width: 47%;
+    margin: 5px;
+    margin-top: 4.3em;
+  }
+
+  .vimeo {
+    max-width: 47%;
+    margin: 5px;
+    vertical-align: top;
+    margin-top: 2em;
+  }
+
+/*........About Numetry.........*/
+  .aboutnumetry .kidsnowadays {
+    max-width: 47%;
+    display: inline-block;
+    margin: 5px;
+    margin-top: 5em;
+    vertical-align: top;
+    min-height: 390px;
+  }
+
+  .gamedevelopment {
+    max-width: 47%;
+    margin-top: 2.5em;
+    vertical-align: top;
+    min-height: 428px;
+    margin-left: 5px;
+  }
+
+/*........Our Team & Experts......*/
+  .leadroles, .keyroles, .educators, .interns, .experts{
+    max-width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2%;
+    margin-left: 22px;
+  }
+
+/*........Contact Us..............*/
+
 
 }
 
-
 /*........scaling-desktop....*/
+@media only screen and (min-width: 900px) {
 
-@media only screen  (min-width: 900px) {
+/*....... genrall input..............*/
 
-  h1 {
 
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    bottom: 50%;
-  }
+
+/*............Homepage...............*/
+
+
+
+/*..........About Numetry............*/
+
+
+
+/*.........Our Team & Experts........*/
+
+
+
+/*...........Contact Us..............*/
 
 
 }
