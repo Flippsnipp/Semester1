@@ -48,7 +48,7 @@ header {
   background-repeat: no-repeat;
   width: 200px;
   padding: 1em;
-  display: inline-block;
+  display: block;
   float: left;
 }
 
@@ -92,10 +92,8 @@ header nav a {
   font-size: 14px;
   background-color: #6E00D5;
   color: white;
-  border: 3px groove #DC2BFF;
   border-radius: 5%;
   text-align: center;
-  max-width: 80%;
   margin: 0 auto;
   display: block;
   padding: 5px;
@@ -103,10 +101,13 @@ header nav a {
 
 }
 
+header nav a:hover {
+  background-color: #DC2BFF;
+  color: white;
+}
 #demolink {
   background-color: #FFDF00;
   color: #040053;
-
 }
 
 
@@ -152,6 +153,7 @@ section a {
 }
 main {
   padding: 1em;
+  margin: 0 auto;
 }
 
 footer nav a{
@@ -186,7 +188,9 @@ footer {
 
 /*.........Homepage.........*/
 
-
+.contentcontainer {
+  display: inline-block;
+}
 .kidsnowadays {
   background-color: #C5D4DD;
   margin-top: 4em;
@@ -444,19 +448,26 @@ a.playbutton {
 }
 
 .intern {
-  background-color: #8990C6;
+  background-color: #1E4470;
   color: white;
   padding: 1em;
   margin-top: 2em;
+}
+
+.intern h2 {
+  color: #FFFF01;
 }
 
 .users {
-  background-color: #BDA1D7;
+  background-color: #09204D;
   color: white;
   padding: 1em;
   margin-top: 2em;
 }
 
+.users h2 {
+  color: #FFFF01;
+}
 .join {
   background-color: #C5D4DD;
   padding: 1em;
@@ -475,9 +486,13 @@ a.playbutton {
   padding: 1em;
 }
 
+.contactform1 {
+  background-color: #C5D4DD;
+  margin: 2em;
+  padding: 1em;
+}
 form {
-  margin-left:  0 auto;
-  margin-right: 0 auto;
+  margin: 0 auto;
 }
 
 .contactform h3 {
@@ -528,6 +543,10 @@ input[type=submit]:hover {
 /*.......Scaling-mob.........*/
 @media only screen and (max-width: 600px) {
 
+  header nav a {
+    max-width: 80%;
+  }
+
 }
 
 
@@ -537,16 +556,17 @@ input[type=submit]:hover {
 /*....... genrall input..............*/
 
   header {
-    max-height: 351px;
+    max-height: 370px;
   }
 
   header nav a {
     min-height: 50px;
+    max-width: 80%;
   }
   .headertext {
     font-size: 20px;
     margin-right: 13.5em;
-    padding-top: 5em;
+  
   }
 
   .headertext > b {
@@ -555,6 +575,7 @@ input[type=submit]:hover {
   .logo {
     float: left;
     width: 300px;
+    padding-top: 2.5em;
 
   }
   .headernavigation {
@@ -644,12 +665,12 @@ input[type=submit]:hover {
 
 /*....... genrall input..............*/
   header {
-    max-height: 360px;
+    max-height: 303px;
   }
 
   .logo {
     float: left;
-    width: 350px;
+    width: 240px;
 
   }
   .navheader {
@@ -666,27 +687,39 @@ input[type=submit]:hover {
   }
 
   .navheader {
-    padding-left: 31%;
+    display: inline-flex;
+    margin-right: 0.01%;
   }
 
   .numetrylogo {
-    transform: translate(-50%,0);
     margin-bottom: 4em;
-    width: 300px;
+    width: 200px;
   }
 
 
   .h1 > b {
     font-size: 35px;
   }
-
-  main > *:not(.excitingandcool) main >:not(.gamedevelopment) {
+  #homepageContent {
+    text-align: center;/*had to hack this, don't see any other options to it at the moment*/
+  }
+  #homepageContent{
+    text-align: left  ;
+  }
+  main > * {
     display: inline-block;
     margin: 5px;
     max-width: 31%;
   }
 
+  
+
+
 /*............Homepage...............*/
+  
+  .boyplaying {
+    margin-top: -6em;
+  }
   .kidsnowadays {
     margin-top: 5em;
     vertical-align: top;
@@ -695,10 +728,13 @@ input[type=submit]:hover {
 
   .haavard {
     vertical-align: top;
-    min-height: 1329px;
-    margin-top: 0em;
+    min-height: 1334px;
+    margin-top: 0;
   }
 
+  .investorsheader {
+    margin-top: -5em;
+  }
   .investors {
     margin-top: 4.3em;
   }
@@ -706,6 +742,7 @@ input[type=submit]:hover {
   .vimeo {
     vertical-align: top;
     margin-top: 2em;
+    width: 100%;
 
   }
 
@@ -716,32 +753,96 @@ input[type=submit]:hover {
     min-height: 400px;
     min-width: 880px;
   }
+  .aboutnumetry .excitingandcool{
+    width: 100%;
+    display: block;
+  }
 
   .excitingandcool section {
     min-width: 880px;
     background-color: #C5D4DD;
   }
+
+  .kidsanddev-wrapper {
+    width: 33%;
+  }
   .aboutnumetry .kidsnowadays {
-    max-width: 47%;
+    max-width: 100%;
     display: inline-block;
     margin: 5px;
-    margin-top: 5em;
+    margin-top: 3em;
     vertical-align: top;
     min-height: 390px;
   }
 
   .gamedevelopment {
-    margin-top: 3.6em;
+    max-width: 100%;
+    display: inline-block;
+    margin: 5px;
+    margin-top: 1em;
     vertical-align: top;
-    min-height: 428px;
-    margin-left: 5px;
+    min-height: 423px;
   }
 
+  .matema {
+    margin: 5px;
+    margin-top: 10em;
+  }
+
+  .gamemissions {
+    margin: 5px;
+    margin-top: 10em;
+  }
+
+  .thegame {
+    display: inline-block;
+    margin-top: -18em;
+  }
 /*.........Our Team & Experts........*/
+  .staff div:first-child{
+    margin-left: 2%;
+  }
+  .staff div:last-child { 
+    margin-right: 2%;
+  }
 
+  .staff > * {
+    vertical-align: top;
+  }
 
+  .ourvision {
+    margin-top: 1.7em;
+  }
+  .leadroles {
+    display: inline-block;
+    width: 100%;
+  }
+  .leftWrapper {
+    max-width: 62%;
+  }
+  .leftWrapper > *:not(:last-child){
+    max-width: 48%;
+    display: inline-block;
+    vertical-align: top; 
+  }
+  .teach {
+    margin-top: 1.7em;
+  }
 
+  .join {
+    max-width: 625px;
+  }
 /*...........Contact Us..............*/
 
+  .cfandcu-wrapper {
+    max-width: 47%;
+    display: inline-block;
+    vertical-align: top;
+  }
 
+  .contactform1 {
+    display: inline-block;
+    max-width: 47%;
+    vertical-align: top;
+  }
 }
