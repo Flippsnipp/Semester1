@@ -33,7 +33,7 @@ header {
   background-repeat: no-repeat;
   background-position: bottom;
   background-image: url('../resources/images/backgroundimagespace.jpg') ;
-  height: 570px;
+  height: 530px;
   color: white;
   font-size: 15px;
   padding: 0;
@@ -58,10 +58,15 @@ header {
 
 }
 
+.headerall {
+  text-align: center;
+}
+
 .navheader {
   list-style-type: none;
   padding:0;
-  display: inline-block;
+  display: block;
+
 
 }
 
@@ -90,7 +95,8 @@ header nav a {
   border: 3px groove #DC2BFF;
   border-radius: 5%;
   text-align: center;
-  max-width: 182px;
+  max-width: 80%;
+  margin: 0 auto;
   display: block;
   padding: 5px;
   text-decoration: none;
@@ -109,14 +115,6 @@ header nav a {
   background-size: cover;
   background-repeat: no-repeat;
   width: 200px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  position: absolute;
-  transform: translate(-50%,0);
-  left: 50%;
-  bottom: 20px;
-
 }
 
 .active {
@@ -128,7 +126,6 @@ h1 {
   font-size: 24px;
   text-align: center;
   padding: 1em;
-  padding-bottom: 2em;
 }
 
 h1 > b {
@@ -540,16 +537,20 @@ input[type=submit]:hover {
 /*....... genrall input..............*/
 
   header {
-    max-height: 330px;
+    max-height: 351px;
   }
 
+  header nav a {
+    min-height: 50px;
+  }
   .headertext {
-    font-size: 25px;
-    margin-top: 0.5em;
+    font-size: 20px;
+    margin-right: 13.5em;
+    padding-top: 5em;
   }
 
   .headertext > b {
-    font-size: 35px;
+    font-size: 30px;
   }
   .logo {
     float: left;
@@ -564,10 +565,16 @@ input[type=submit]:hover {
     padding-left: 10%;
   }
 
+  .navheader {
+    float: right;
+    margin-right: 0.5em;
+    padding-top: 0.5em;
+  }
+
   .numetrylogo {
-    transform: translate(-50%,0);
     margin-bottom: 2em;
-    width: 200px;
+    width: 230px;
+    margin-left: 12em;
   }
 
 /*.........Homepage.........*/
@@ -645,7 +652,7 @@ input[type=submit]:hover {
     width: 350px;
 
   }
-  .headernavigation {
+  .navheader {
     margin-left: 2em;
   }
 
