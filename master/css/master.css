@@ -48,8 +48,7 @@ header {
   background-repeat: no-repeat;
   width: 200px;
   padding: 1em;
-  display: block;
-  float: left;
+  display: inline-block;
 }
 
 .nav {
@@ -58,9 +57,6 @@ header {
 
 }
 
-.headerall {
-  text-align: center;
-}
 
 .navheader {
   list-style-type: none;
@@ -573,7 +569,6 @@ input[type=submit]:hover {
     font-size: 30px;
   }
   .logo {
-    float: left;
     width: 300px;
     padding-top: 2.5em;
 
@@ -669,7 +664,6 @@ input[type=submit]:hover {
   }
 
   .logo {
-    float: left;
     width: 240px;
 
   }
@@ -703,9 +697,7 @@ input[type=submit]:hover {
   #homepageContent {
     text-align: center;/*had to hack this, don't see any other options to it at the moment*/
   }
-  #homepageContent{
-    text-align: left  ;
-  }
+
   main > * {
     display: inline-block;
     margin: 5px;
@@ -819,18 +811,27 @@ input[type=submit]:hover {
   }
   .leftWrapper {
     max-width: 62%;
+    display: inline-flex;
+    align-items: stretch;
+    flex-wrap: wrap;
   }
   .leftWrapper > *:not(:last-child){
     max-width: 48%;
     display: inline-block;
-    vertical-align: top; 
+    vertical-align: top;
+    margin: 0 auto;
+  }
+
+  .leftWrapper > section.keys {
+    margin: 24px auto 0;
   }
   .teach {
     margin-top: 1.7em;
   }
 
   .join {
-    max-width: 625px;
+    width: 100%;
+    margin-left: 2.5%;
   }
 /*...........Contact Us..............*/
 
