@@ -33,7 +33,6 @@ header {
   background-repeat: no-repeat;
   background-position: bottom;
   background-image: url('../resources/images/backgroundimagespace.jpg') ;
-  height: 530px;
   color: white;
   font-size: 15px;
   padding: 0;
@@ -63,18 +62,19 @@ header {
   padding:0;
   display: block;
 
-
 }
 
 .headernavigation {
   text-align: center;
 
 }
+nav ul {
+  margin: 0;
+  padding: 15px 0;
+  margin: 0 auto;
+  list-style: none;
 
-.headertext {
-  margin-top: -1em;
 }
-
 nav li {
 
   text-decoration: none;
@@ -108,7 +108,8 @@ header nav a:hover {
 
 
 .numetrylogo {
-
+  display: block;
+  margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
   width: 200px;
@@ -160,6 +161,7 @@ footer nav a{
 footer {
   text-align: center;
   color: white;
+  background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0.4), rgba(0,0,0,0.6), rgba(0,0,0,0.7));
 }
 .navfooter {
   list-style-type: none;
@@ -199,7 +201,7 @@ footer {
 }
 
 .boyplaying {
-  margin-top: -5em;
+  margin-top: -6em;
   width: 100%;
 
 }
@@ -235,7 +237,7 @@ footer {
 
 .investorsheader {
   width: 100%;
-  margin-top: -4em;
+  margin-top: -5em;
 }
 
 
@@ -303,6 +305,14 @@ iframe {
   padding: 1em;
 }
 
+.wholenewway {
+  background-color: #C5D4DD;
+  margin-top: 4em;
+  display: inline-block;
+}
+.wholenewway section {
+  padding: 1em;
+}
 .concentrated {
   width: 100%;
 
@@ -367,7 +377,7 @@ iframe {
   display: block;
   text-align: center;
   margin: 0 auto;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 a.playbutton {
@@ -537,37 +547,52 @@ input[type=submit]:hover {
 }
 
 /*.......Scaling-mob.........*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 620px) {
 
   header nav a {
     max-width: 80%;
   }
 
 }
+@media only screen and (min-width: 620px) {
+  .navheader {
+    display: block;
+    text-align: center;
+    background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0.4), rgba(0,0,0,0.6), rgba(0,0,0,0.7));
+  }
+  header nav ul {
+    padding: 0 0 20px;
+    margin: 0;
+  }
+  header nav li {
+    display: inline-block;
+  }
+  header nav li a {
+    padding: 15px 20px;
+    margin: 5px;
+  }
 
+}
 
 /*........Scaling-tab........*/
-@media only screen and (min-width: 600px) and (max-width: 900px){
+@media only screen and (min-width: 620px) and (max-width: 900px){
 
 /*....... genrall input..............*/
 
-  header {
-    max-height: 370px;
+  body {
+    font-size: 16px;
   }
-
   header nav a {
-    min-height: 50px;
-    max-width: 80%;
+    display: inline-block;
   }
   .headertext {
     font-size: 20px;
-    margin-right: 13.5em;
-  
   }
 
   .headertext > b {
     font-size: 30px;
   }
+
   .logo {
     width: 300px;
     padding-top: 2.5em;
@@ -575,22 +600,11 @@ input[type=submit]:hover {
   }
   .headernavigation {
     margin-left: 2em;
-  }
-
-  .clearfix {
-    padding-left: 10%;
-  }
-
-  .navheader {
-    float: right;
-    margin-right: 0.5em;
-    padding-top: 0.5em;
-  }
+  } 
 
   .numetrylogo {
     margin-bottom: 2em;
     width: 230px;
-    margin-left: 12em;
   }
 
 /*.........Homepage.........*/
@@ -624,7 +638,7 @@ input[type=submit]:hover {
   }
 
 /*........About Numetry.........*/
-  .aboutnumetry .kidsnowadays {
+  .wholenewway {
     max-width: 47%;
     display: inline-block;
     margin: 5px;
@@ -651,24 +665,29 @@ input[type=submit]:hover {
   }
 
 /*........Contact Us..............*/
+  input {
+    font-size: 15px;
+  }
 
-
+  option {
+    font-size: 15px;
+  }
 }
 
 /*........scaling-desktop....*/
 @media only screen and (min-width: 900px) {
 
 /*....... genrall input..............*/
-  header {
-    max-height: 303px;
-  }
 
+body {
+  font-size: 18px;
+}
   .logo {
-    width: 240px;
+    width: 270px;
 
   }
-  .navheader {
-    margin-left: 2em;
+  .nav li a { 
+    display: inline-block;
   }
 
   .headertext {
@@ -678,11 +697,6 @@ input[type=submit]:hover {
 
   .headertext > b {
     font-size: 40px;
-  }
-
-  .navheader {
-    display: inline-flex;
-    margin-right: 0.01%;
   }
 
   .numetrylogo {
@@ -723,7 +737,9 @@ input[type=submit]:hover {
     min-height: 1334px;
     margin-top: 0;
   }
-
+  .preach {
+    min-height: 220px;
+  }
   .investorsheader {
     margin-top: -5em;
   }
@@ -745,9 +761,14 @@ input[type=submit]:hover {
     min-height: 400px;
     min-width: 880px;
   }
+
+  .aboutnumetry > *{
+    vertical-align: top;
+  }
+
   .aboutnumetry .excitingandcool{
     width: 100%;
-    display: block;
+    display: contents;
   }
 
   .excitingandcool section {
@@ -758,11 +779,9 @@ input[type=submit]:hover {
   .kidsanddev-wrapper {
     width: 33%;
   }
-  .aboutnumetry .kidsnowadays {
+  .wholenewway {
     max-width: 100%;
-    display: inline-block;
-    margin: 5px;
-    margin-top: 3em;
+    margin: 6em 5px 5px;
     vertical-align: top;
     min-height: 390px;
   }
@@ -778,18 +797,19 @@ input[type=submit]:hover {
 
   .matema {
     margin: 5px;
-    margin-top: 10em;
+    margin-top: 2em;
   }
 
   .gamemissions {
     margin: 5px;
-    margin-top: 10em;
+    margin-top: 1.65em;
   }
 
   .thegame {
-    display: inline-block;
-    margin-top: -18em;
+    float: right;
   }
+
+  
 /*.........Our Team & Experts........*/
   .staff div:first-child{
     margin-left: 2%;
@@ -824,6 +844,7 @@ input[type=submit]:hover {
 
   .leftWrapper > section.keys {
     margin: 24px auto 0;
+    margin-left: 10px;
   }
   .teach {
     margin-top: 1.7em;
@@ -834,16 +855,22 @@ input[type=submit]:hover {
     margin-left: 2.5%;
   }
 /*...........Contact Us..............*/
+  input {
+    font-size: 16px;
+  }
 
+  option {
+    font-size: 16px;
+  }
   .cfandcu-wrapper {
-    max-width: 47%;
+    max-width: 45%;
     display: inline-block;
     vertical-align: top;
   }
 
   .contactform1 {
     display: inline-block;
-    max-width: 47%;
+    max-width: 44%;
     vertical-align: top;
   }
 }
